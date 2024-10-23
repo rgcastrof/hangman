@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "hangman.h"
-#include "menu.h"
+#include "../include/hangman.h"
+#include "../include/menu.h"
 
 
 /* Themes */

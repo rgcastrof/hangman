@@ -1,4 +1,4 @@
-#include "hangman.h"
+#include "../include/hangman.h"
 #include <stdio.h>
 
 static const char *hangman[] = {
