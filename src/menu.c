@@ -38,6 +38,8 @@ void drawThemes()
     printf("3. Esportes\n");
     printf("4. Comidas\n");
     printf("5. Profissões\n");
+    printf("6. Personalidades históricas\n");
+    printf("7. Jogos\n");
 }
 
 int themeSelection()
@@ -60,6 +62,12 @@ int themeSelection()
             break;
         case 5:
             return 5;
+            break;
+        case 6:
+            return 6;
+            break;
+        case 7:
+            return 7;
             break;
         default:
             return 0;

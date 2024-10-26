@@ -64,7 +64,7 @@ void redrawHang(int chances)
 void drawAvaliableLetters(char *avletters)
 {
     printf("Letras disponíveis:\n");
-    for (int i = 0; i < 25; i++) {
+    for (int i = 0; i < 26; i++) {
         printf("%c ", avletters[i]); 
         if (i == 9 || i == 18) { printf("\n"); }
     }
@@ -72,7 +72,7 @@ void drawAvaliableLetters(char *avletters)
 
 void checkAvaliableLetters(char let, char *avletters)
 {
-    for (int i = 0; i < 25; i++) {
+    for (int i = 0; i < 26; i++) {
 
         if (avletters[i] == let) {
             avletters[i] = '-';

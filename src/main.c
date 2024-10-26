@@ -13,6 +13,12 @@ static const char *animals[] = {
     "papagaio",
     "leao",
     "cobra",
+    "elefante",
+    "rinoceronte",
+    "canguru",
+    "pinguim",
+    "morcego",
+    "falcão",
 };
 
 static const char *countrys[] = {
@@ -21,6 +27,12 @@ static const char *countrys[] = {
     "bangladesh",
     "luxenburgo",
     "china",
+    "argentina",
+    "canadá",
+    "chile",
+    "mexico",
+    "egito",
+    "senegal",
 };
 
 static const char *sports[] = {
@@ -28,7 +40,13 @@ static const char *sports[] = {
     "futebol",
     "tenis",
     "ciclismo",
-    "nataçao",
+    "natacao",
+    "esgrima",
+    "boxe",
+    "judo",
+    "maratona",
+    "atletismo",
+    "hipismo",
 };
 
 static const char *foods[] = {
@@ -37,6 +55,12 @@ static const char *foods[] = {
     "canja",
     "esifirra",
     "estrogonofe",
+    "risoto",
+    "lasanha",
+    "mojito",
+    "tiramisu",
+    "espaguete",
+    "croissant",
 };
 
 static const char *works[] = {
@@ -45,10 +69,44 @@ static const char *works[] = {
     "mecanico",
     "professor",
     "tiktoker",
+    "arquiteto",
+    "dentista",
+    "carpinteiro",
+    "eletricista",
+    "bibliotecario",
+    "veterinario",
+};
+
+static const char *historicalCharacters[] = {
+    "napoleao",
+    "cleopatra",
+    "mozart",
+    "shakespeare",
+    "socrates",
+    "einstein",
+    "jesus cristo",
+    "newton",
+    "da vinci",
+    "julio cesar",
+    "platao",
+};
+
+static const char *games[] = {
+    "minecraft",
+    "zelda",
+    "pokemon",
+    "diablo",
+    "doom",
+    "battlefield",
+    "resident evil",
+    "gta",
+    "portal",
+    "half life",
+    "super mario",
 };
 
 /* Avaliable letters on the keyboard */
-char avaliableLetters[] = {
+char avaliableLetters[26] = {
         'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
         'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',
         'z', 'x', 'c', 'v', 'b', 'n', 'm',
@@ -100,6 +158,20 @@ const char *choosed_word()
         int selector = rand() % size;
 
         return works[selector];
+    }
+    if (option == 6) {
+    
+        int size = sizeof(historicalCharacters) / sizeof(historicalCharacters[0]);
+        int selector = rand() % size;
+
+        return historicalCharacters[selector];
+    }
+    if (option == 7) {
+    
+        int size = sizeof(games) / sizeof(games[0]);
+        int selector = rand() % size;
+
+        return games[selector];
     }
     return NULL;
 }
